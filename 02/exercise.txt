@@ -1,0 +1,7 @@
+PS C:\Users\sunmi\Desktop> cd C:\Users\sunmi\Desktop
+PS C:\Users\sunmi\Desktop> mkdir "MH8811_02"
+PS C:\Users\sunmi\Desktop>  cd C:\Users\sunmi\Desktop\MH8811_02
+PS C:\Users\sunmi\Desktop\MH8811_02>  New-Item -Type File "my file.py"
+PS C:\Users\sunmi\Desktop\MH8811_02> cd C:\Users\sunmi\Desktop
+PS C:\Users\sunmi\Desktop> rm -Recurse -Force C:\Users\sunmi\Desktop\MH8811_02
+PS C:\Users\sunmi\Desktop>
