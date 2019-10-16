@@ -91,12 +91,12 @@ path1 = input("Please enter the path of the json file ")
 # load the data structure from the json file
 
 data_file = open(path1)
-data_structure = json.load(data_file)
+data1 = json.load(data_file)
 data_file.close()
 
 
 # convert the original data structure into a string using serializer
-string1 = serialization(data_structure)
+string1 = serialization(data1)
 
 # write the string to a file
 # w for write,Don't forget to close the file
@@ -106,7 +106,7 @@ file1.write(string1)
 file1.close()
 
 # Read the string back from the file. Close the file afterwards
-file2 = open(file_name)
+file2 = open(file_name, 'r')
 string2 = file2.read()
 file2.close()
 
@@ -114,6 +114,6 @@ file2.close()
 deserialization_data= deserialization(string2)
 
 # Compare the two data structures
-print(my_compare(deserialization_data, data_structure))
+print(my_compare(deserialization_data, data1))
 print(deserialization_data)
-print(data_structure)
+print(data1)
