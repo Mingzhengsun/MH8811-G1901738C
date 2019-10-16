@@ -47,7 +47,7 @@ def deserialization(i):
 			if value_type == "<class 'str'>":
 				res[key] = str(value)
 			elif value_type == "<class 'int'>":
-				res[key] = float(value)
+				res[key] = int(value)
 			else:
 				res[key] = float(value)
 		return res
